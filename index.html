@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="application-root">
+        <!-- Content goes here!-->
+    </div>
+
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+
+    <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+        // Code goes here!
+        const appRoot = document.querySelector('#application-root');
+
+        // App Component
+        function App() {
+            return (
+                <div id="content">
+                    <header id="container">
+                        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally"></img>
+                        <div id="contact-info">
+                            <h1>Sally Student</h1>
+                            <p>1600 Pennsylvania Avenue
+                            <br></br>
+                            Washington DC, 20500
+                            <br></br>
+                            (123) 867-5309</p>
+                        </div>
+                    </header>
+
+                    <main>
+                        <section id="work">
+                            <h2>Work:</h2>
+                            <ul>
+                                <li>
+                                    <p id="bold">Google, Inc</p>
+                                    <p>Software Engineer</p>
+                                    <p>2014-Present</p>
+                                    <p>Did a lot of computer things...</p>
+                                </li>
+                                <br></br>
+                                <li>
+                                    <p id="bold">Burger King</p>
+                                    <p>Line Cook</p>
+                                    <p>1999-2013</p>
+                                    <p>Made hamburgers and stuff...</p>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section id="education">
+                            <h2>Education:</h2>
+                            <ul id="no-style">
+                                <li>
+                                    <p>University of Colorado</p>
+                                    <p>Bachelors of Computer Science</p>
+                                    <p>1999-2003</p>
+                                    <p>GPA: 2.78 😞</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </main>
+                    
+                    <footer>
+                        <a href = "mailto: sally@thisisallfake.com">Say Hello 👋</a>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, appRoot);
+    </script>
+</body>
+</html>
